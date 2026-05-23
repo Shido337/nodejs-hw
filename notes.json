@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Plan weekly tasks",
+    "content": "Prepare a list of tasks for the current week",
+    "tag": "Todo"
+  },
+  {
+    "title": "Team meeting",
+    "content": "Discuss current project progress with the team",
+    "tag": "Meeting"
+  },
+  {
+    "title": "Buy groceries",
+    "content": "Milk, bread, eggs, fruits",
+    "tag": "Shopping"
+  },
+  {
+    "title": "Project ideas",
+    "content": "Write down new ideas for the backend project",
+    "tag": "Ideas"
+  },
+  {
+    "title": "Workout",
+    "content": "Go to the gym in the evening",
+    "tag": "Health"
+  },
+  {
+    "title": "Budget check",
+    "content": "Review monthly expenses",
+    "tag": "Finance"
+  },
+  {
+    "title": "Travel plan",
+    "content": "Check tickets and hotel options",
+    "tag": "Travel"
+  },
+  {
+    "title": "Important deadline",
+    "content": "Submit homework before the deadline",
+    "tag": "Important"
+  }
+]
