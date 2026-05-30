@@ -1,7 +1,8 @@
 import crypto from 'node:crypto';
 
-import { Session } from '../models/session';
+import { Session } from '../models/session.js';
 import { FIFTEEN_MINUTES, ONE_DAY } from '../constants/time.js';
+
 const cookieOptions = {
   httpOnly: true,
   secure: true,
@@ -28,6 +29,7 @@ export const setSessionCookies = (res, session) => {
     ...cookieOptions,
     maxAge: FIFTEEN_MINUTES,
   });
+
   res.cookie('refreshToken', session.refreshToken, {
     ...cookieOptions,
     maxAge: ONE_DAY,
