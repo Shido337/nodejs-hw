@@ -32,12 +32,10 @@ userSchema.methods.toJSON = function () {
   return user;
 };
 
-userSchema.pre('save', function (next) {
+userSchema.pre('save', function () {
   if (this.isNew && !this.username) {
     this.username = this.email;
   }
-
-  next();
 });
 
 export const User = model('User', userSchema, 'users');
