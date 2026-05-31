@@ -1,5 +1,8 @@
 import { Schema, model } from 'mongoose';
 
+const DEFAULT_AVATAR =
+  'https://ac.goit.global/fullstack/react/default-avatar.jpg';
+
 const userSchema = new Schema(
   {
     username: {
@@ -17,6 +20,11 @@ const userSchema = new Schema(
       type: String,
       required: true,
       minlength: 8,
+    },
+    avatar: {
+      type: String,
+      required: false,
+      default: DEFAULT_AVATAR,
     },
   },
   {
